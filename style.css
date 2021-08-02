@@ -16,6 +16,9 @@ body {
     line-height: 1.6em;
     font-size: 26px;
 }
+body.active{
+    overflow: hidden;
+}
 a{
     text-decoration: none;
     color: white;
@@ -264,6 +267,7 @@ footer {
     top: 0;
     left: 0;
     z-index: 100;
+    display: none;
 }
 .login {
     width: 450px;
