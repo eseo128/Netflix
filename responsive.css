@@ -52,6 +52,22 @@
         position: static;
         transform: translate(0);
     }
+
+    /* Change Order */
+    .download .inner,
+    .create .inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .download .inner .desc,
+    .create .inner .desc {
+        order: 1;
+    }
+    .download .inner .preview,
+    .create .inner .preview {
+        order: 2;
+    }
+
     .desc,
     .preview {
         float: none;
