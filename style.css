@@ -9,7 +9,6 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-
 body {
     background-color: black;
     color: white;
@@ -17,7 +16,6 @@ body {
     line-height: 1.6em;
     font-size: 26px;
 }
-
 a{
     text-decoration: none;
     color: white;
@@ -64,7 +62,6 @@ section {
     background: url(images/website_medium.jpg) no-repeat center center;
     background-size: cover;
 }
-
 .welcome:before {
     content: '';
     position: absolute;
@@ -74,7 +71,6 @@ section {
     top: 0;
     left: 0;
 }
-
 /* Heading */
 .heading {
     position: absolute;
@@ -84,7 +80,6 @@ section {
     text-align: center;
     width: 800px;
 }
-
 .heading h1 {
     font-size: 64px;
     line-height: 1.2em;
@@ -98,7 +93,6 @@ section {
 .heading p {
     font-size: 20px;
 }
-
 .getstarted{
     position: relative;
     display: inline-block;
@@ -116,7 +110,6 @@ section {
     font-size: 18px;
     padding-left: 5px;
 }
-
 .getstarted input[type=email] + span {
     color: #999;
     font-size: 16px;
@@ -126,12 +119,10 @@ section {
     transition: 0.35s;
     pointer-events: none;
 }
-
 .getstarted input[type=email]:focus + span {
     transform: translateY(-18px);
     font-weight: bold;
 }
-
 .getstarted button {
     width: 220px;
     background-color: crimson;
@@ -141,11 +132,9 @@ section {
 }
 
 /* Section : Enjoy, Download, Watch, Create */
-
 .enjoy, .download, .watch, .create {
     height: 500px;
 }
-
 .inner {
     width: 1150px;
     margin: auto;
@@ -155,11 +144,9 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .desc, .preview {
     float: left;
 }
-
 .desc {
     padding-top: 40px;
     width: 60%;
@@ -175,3 +162,60 @@ section {
 .preview img {
     height: 370px;
 }
+
+/* FAQ */
+.faq {
+    padding: 80px 0;
+}
+.faq-inner {
+    width: 850px;
+    margin: auto;
+}
+.faq-inner h1 {
+    text-align: center;
+    font-size: 50px;
+}
+input[name=faq-item] {
+    display: none;
+}
+/* .accordian label {} */
+input[name=faq-item] + label {
+    display: block;
+    background-color: #303030;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+.faq-content {
+    background-color: #303030;
+    padding: 0;
+    margin-bottom: 10px;
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+input[name=faq-item] + label span {
+    float: right;
+    font-size: 36px;
+    transition: 0.35s;
+}
+aside {
+    text-align: center;
+}
+aside p {
+    font-size: 24px;
+}
+
+/* Checked Function */
+/* diplay : none은 transiton을 쓸 수 없어서 유동적으로 max-height 써야한다 */
+/* max-height을 통해 content 높이만큼 늘어날 수 있다 */
+input[name=faq-item]:checked + label + .faq-content {
+    /* display: block; */
+    max-height: 500px;
+    padding: 15px;
+}
+input[name=faq-item]:checked +label span {
+    transform: rotate(45deg);
+}
+
