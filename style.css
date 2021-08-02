@@ -96,6 +96,8 @@ section {
 .heading p {
     font-size: 20px;
 }
+
+/* Getstarted */
 .getstarted{
     position: relative;
     display: inline-block;
@@ -243,7 +245,6 @@ footer {
     margin-bottom: 20px;
     font-weight: normal;
 }
-.links {}
 .items {
     display: inline-block;
     width: 24%;
