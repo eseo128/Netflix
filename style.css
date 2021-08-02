@@ -15,6 +15,7 @@ body {
     color: white;
     margin: 0;
     line-height: 1.6em;
+    font-size: 26px;
 }
 
 a{
@@ -51,9 +52,15 @@ header {
 
 }
 
+/* Common CSS */
+section {
+    border-bottom: 10px solid #333;
+    position: relative;
+}
+
 /* Section : Welcome */
 .welcome{
-    height: 80vh;
+    height: 95vh;
     background: url(images/website_medium.jpg) no-repeat center center;
     background-size: cover;
 }
@@ -61,10 +68,110 @@ header {
 .welcome:before {
     content: '';
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.664);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
 }
 
+/* Heading */
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 800px;
+}
+
+.heading h1 {
+    font-size: 64px;
+    line-height: 1.2em;
+    margin: 0;
+}
+.heading h5 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 20px;
+}
+.heading p {
+    font-size: 20px;
+}
+
+.getstarted{
+    position: relative;
+    display: inline-block;
+}
+.getstarted input[type=email],
+.getstarted button {
+    height: 60px;
+    outline: none;
+    border: none;
+    vertical-align: middle;
+}
+.getstarted input[type=email] {
+    width: 450px;
+    margin-right: -6px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.getstarted input[type=email] + span {
+    color: #999;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    transition: 0.35s;
+    pointer-events: none;
+}
+
+.getstarted input[type=email]:focus + span {
+    transform: translateY(-18px);
+    font-weight: bold;
+}
+
+.getstarted button {
+    width: 220px;
+    background-color: crimson;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Section : Enjoy, Download, Watch, Create */
+
+.enjoy, .download, .watch, .create {
+    height: 500px;
+}
+
+.inner {
+    width: 1150px;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.desc, .preview {
+    float: left;
+}
+
+.desc {
+    padding-top: 40px;
+    width: 60%;
+}
+.desc h2 {
+    font-size: 50px;
+    line-height: 1.2em;
+}
+.preview {
+    text-align: center;
+    width: 40%;
+}
+.preview img {
+    height: 370px;
+}
