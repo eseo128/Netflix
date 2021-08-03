@@ -12,7 +12,7 @@ Netflix Global English Site를 PC와 Mobile 버전으로 제작한다.<br>
 # Function
 - 반응형 레이아웃
 - PC 및 Mobile 접근성
-- Sign in 버튼 클릭시 로그인 화면 제시
+- Sign in 버튼 클릭시 로그인 창 제시
 - 이메일 입력 칸에 cursor를 focus하면 placeholder처럼 보이는 span을 transform을 줘서 움직이는 효과 구현
 - FAQ는 radio input으로 제작하고, check 될 시 content를 보여주는 효과를 Script대신 CSS로 간편하게 구현
   <br>(display : none은 transiton을 쓸 수 없어서 max-height 써서 유동적으로 적용한다.)
@@ -20,7 +20,7 @@ Netflix Global English Site를 PC와 Mobile 버전으로 제작한다.<br>
 - login 창이 나타나면 overflow: hidden을 추가하여 스크롤이 되지 않도록 함
 - Mobile 버전에서 download와 create section 내 이미지와 글자를 PC 버전과 반대로 배치 함 <br>(flex의 order 속성을 이용)
 
-# Site Image
+# Site Image (PC ver.)
  
 ![image](https://user-images.githubusercontent.com/34049770/128049985-3c3ae667-fc53-4cf9-b80f-eac7643a9ca1.png)
 
